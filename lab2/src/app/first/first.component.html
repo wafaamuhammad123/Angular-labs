@@ -1,0 +1,22 @@
+<!-- <p>first works!</p>
+<p>{{name}}</p> -->
+
+<div class="card">
+    
+    <div class="card-body">
+        <div class="row d-flex justify-content-center">
+            <div class="column">
+                <label class="col-form-label">Enter ur input</label>
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control"  placeholder="Enter ur input" [(ngModel)]="input">
+            </div>
+            <div class="col-auto">
+                <input type="button" value="Reset" class="btn btn-outline-info" (click)="reset()">
+            </div>
+        </div>
+       
+            <p>ur input is: {{input}}</p>
+       
+    </div>
+</div>
