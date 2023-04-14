@@ -1,0 +1,25 @@
+<div class="card">
+   
+    <div class="card-body container d-flex justify-content-center align-items-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active" style="height: 350px; width: 280px; overflow: hidden;   margin-left: 35%;">
+                <img [src]="img" class="d-block w-100" style="height: 100%; width: 100%;">
+              </div>
+
+            </div>
+
+            <!-- buttons -->
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" style="margin-left: 17%;">
+                <input type="button" value="Next" class="btn btn-outline-info" (click)="nextImage()"/>
+              
+                <input type="button" value="Previous" class="btn btn-outline-info" (click)="prevImage()"/>
+
+                <input type="button" value="Slide" class="btn btn-outline-info" (click)="slideImage()"/>
+
+                <input type="button" value="Stop" class="btn btn-outline-info" (click)="stopImage()"/>
+            </div>
+        </div>
+    </div>
+</div>
