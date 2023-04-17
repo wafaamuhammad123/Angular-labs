@@ -1,0 +1,13 @@
+
+table{
+   
+    margin-top: 3%;
+margin-left: 30%;
+    width: 30%;
+    text-align: center;
+  }
+  
+  tr, th, td{
+   
+    border: 1px solid black;
+  }
