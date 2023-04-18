@@ -1,0 +1,21 @@
+<table class="table text-center mx-auto mt-8">
+  <thead>
+    <tr>
+      <th scope="row">Name</th>
+      <th scope="row">Age</th>
+      <th scope="row">Phone</th>
+      <th scope="row">address</th>
+      <th scope="row">email</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of Students">
+      <td>{{ s.name }}</td>
+      <td>{{ s.age }}</td>
+      <td>{{ s.phone }}</td>
+      <td>{{ s.address }}</td>
+      <td>{{ s.email }}</td>
+    </tr>
+  </tbody>
+</table>

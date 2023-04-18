@@ -1,0 +1,38 @@
+<form (ngSubmit)="add()" [formGroup]="validationForm" class="frm">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example1" class="form-control"  placeholder=" Name"   formControlName="name"/>
+    </div>
+  
+    <div style="text-align: center; color: red;" *ngIf="!nameValid && hideName()" >
+        <p>Name should be more than 3 letters</p>
+      </div>
+
+    <!-- Email input -->
+    <div  class="form-outline mb-4">
+      <input type="email" id="form4Example2" class="form-control"  placeholder="Email address"    formControlName="email" />
+    </div>
+  
+    <div  style="text-align: center; color: red;" *ngIf="!emailValid && hideEmail()">
+        <p>Invalid email</p>
+      </div>
+    <!-- age input -->
+    <div class="form-group">
+        <div class="mb-3">     
+            <input type="text" class="form-control" placeholder="Age" aria-label="agw" aria-describedby="basic-addon1"  formControlName="age">
+            
+
+            <div  style="text-align: center; color: red; margin-top: 5%;" *ngIf="!AgeValid ">
+                <p> 20 &lt; Age &lt; 40</p>
+              </div>
+<!--  <div style="text-align: center; color: green; margin-top: 5px;"
+              *ngIf="(+age)>20 && (+age)<40; else Invalidage">
+              <p class="mb-0"> Valid age</p>
+          </div>
+       -->
+
+  
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Add</button>
+  

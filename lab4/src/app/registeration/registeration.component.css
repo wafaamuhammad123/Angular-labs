@@ -1,0 +1,22 @@
+.frm{
+width: 35%;
+border: 1px solid black;
+margin-left: 27%;
+padding: 3%;
+background-image: linear-gradient(to right, #757575 0%, rgb(15, 15, 15) 100%);
+}
+
+.frm input{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+button{
+    margin-top: 9%;
+    width: 40%;
+    border: none;
+    font-size: 19px;
+    background-color: rgb(187, 137, 11);
+
+}
+
