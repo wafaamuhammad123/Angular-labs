@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h3>Update Student {{ ID }}</h3>
+   
+    <form  style="width: 70%; margin-left: 15%; margin-top: 5%;">
+        <div class="form-group d-flex m-2">
+        <label style="margin-right: 2%;" for="name">Name:</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="user.name" name="name">
+      </div> 
+
+      <div class="form-group d-flex m-2">
+        <label style="margin-right: 4%;"  for="age">Age:</label>
+        <input type="number" class="form-control" id="age" [(ngModel)]="user.age" name="age">
+      </div> 
+      <div class="form-group d-flex m-2">
+        <label style="margin-right: 3%;"  for="email">Email:</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="user.email" name="email">
+      </div>
+
+      <div class="form-group d-flex m-2">
+        <label style="margin-right: 2%;"  for="phone">Phone:</label>
+        <input type="text" class="form-control" id="phone" [(ngModel)]="user.phone" name="phone">
+      </div>
+  
+      
+      <button type="submit" class="btn btn-success" (click)="UpdateUser(user.name, user.age, user.email, user.phone)">Update</button>
+    </form>
+  </div> 

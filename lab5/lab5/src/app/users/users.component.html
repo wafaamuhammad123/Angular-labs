@@ -1,0 +1,26 @@
+<table class="table mx-auto table-striped d-flex justify-content-center text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" class="text-center">
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+      
+        <div class="btn-group">
+          <a class="btn btn-dark me-2"routerLink="/users/{{ user.id }}">Details</a>
+             <a class="btn btn-success  me-2"  routerLink="/Update/{{user.id}}/edit" >Update</a>
+          
+          <button class="btn btn-danger" (click)="deleteStudent(user.id)">Delete</button>
+        </div>
+      </tr>
+    </tbody>
+  </table>
